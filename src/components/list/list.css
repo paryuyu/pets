@@ -1,0 +1,15 @@
+.listLine{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    
+}
+
+.detailBox+ .listLine{
+    width: 30%;
+    overflow-y:scroll;
+}
+
+.detailBox+ .listLine .itemBox {
+    width: 100%;
+}

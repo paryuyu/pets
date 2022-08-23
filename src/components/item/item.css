@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.itemBox{
+    font-family: 'ChosunGu';
+    width: 300px;
+    border: 5px solid rgb(241, 241, 241);
+    padding: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#happenPlace{
+    font-size: 12px;
+}
+
+
+.thumbnail{
+    width: 130px;
+    height: 120px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.itemBox:hover{
+    transform: scale(1.01);
+}
+
+.itemInform{
+text-align: center;
+width: 58%;
+}

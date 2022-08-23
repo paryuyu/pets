@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.detailBox {
+    width: 70%;
+    text-align: center;
+}
+
+.detailImg {
+    width: 500px;
+    max-height: 500px;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius:30%;
+    margin: 50px;
+
+}
+
+.datailHead {
+    text-align: center;
+   font-family: 'ChosunGu';
+    color: #444444;
+
+}
+
+.detailInfo {
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+
+table {
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    color: #444444;
+    border-left: 1px solid #686868;
+    border-right: 1px solid #686868;
+}
+
+
+th{
+    background-color: rgb(241, 241, 241);
+    border-top: 1px solid #686868;
+    padding: 10px;
+    width: 15%;
+    border-bottom:  1px solid #686868;;
+}
+
+td{
+    border-top: 1px solid #686868;
+    width: 200px;
+    padding: 10px;
+    border-bottom:  1px solid #686868;;
+}

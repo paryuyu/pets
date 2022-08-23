@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.catch{
+    font-family: 'ChosunGu';
+    font-size: 12px;
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+
+.app {
+    font-family: 'ChosunGu';
+    display: flex;
+    flex-direction: row;
+    gap:2px;
+}
+
+.titleHead{
+    font-family: 'ChosunGu';
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgb(75, 74, 74);
+}
