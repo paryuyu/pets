@@ -10,6 +10,7 @@ function App() {
   console.log("App")
 
   const [pets, setPets] = useState([])
+  const [clicked, setClicked] = useState();
   const [selected, setSelected] = useState();
   const [sido, setSido] = useState();
 
@@ -32,6 +33,7 @@ function App() {
     .then(res => res.json())
     .then(json => {
       setSido(json.response.body.items.item)
+      
     })
     .catch(e => {
       console.log(e);
@@ -59,22 +61,22 @@ function App() {
 
   }
 
-  const handleClicked = (data) => {
-    setSelected(data) 
+  const handleClicked = (evt) => {
+    evt.preventDefault();
+    setClicked(evt)
+    console.log("클릭이벤트")
   }
 
 
 
   return (<>
 
-    <h1 className="titleHead" onClick={handleClicked}>유기동물 조회 서비스</h1>
-
+    <h1 className="titleHead">유기동물 조회 서비스</h1>
     <p className="catch"><i className="fas fa-paw"></i>사지말고 입양하세요</p>
-
     <SearchBar onSearch={handleSearch} />
     <div className="app">
       {selected ? <Detail target={selected} /> : <></> }
-      <List pets={pets} sido={sido} onSelected={handleSelected} />
+      <List pets={pets} sido={sido} onSelected={handleSelected}/>
     </div>
   </>
   );

@@ -30,3 +30,9 @@
     margin-bottom: 0;
     color: rgb(75, 74, 74);
 }
+
+@media (max-width:600px) {
+    .itemBox{
+        width: 100%;
+    }
+}

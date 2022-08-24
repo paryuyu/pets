@@ -2,11 +2,15 @@ import "./detail.css"
 
 function Detail(props) { //props.target을 받아올건데 props로 해주면 target까지 가줘야함. {target} 만 해두면 바로 찍을 수 있음.
     //있을때만 컴포넌트를 추가해주는 조건을 App에서 줬음. undefined면 안나오게~ 
+
+    const handleClick =(data)=>{}
+
+
+
     return (<div className="detailBox">
-        <h2 className="datailHead">{props.target.kindCd}</h2>
-       
+        <h2 className="datailHead">{props.target.kindCd}  <i id="icon" className="fas fa-home" onClick={handleClick}></i></h2>
+      
         <div className="detailInfo">
-        
             <img src={props.target.popfile} className="detailImg" />
             <table>
                 <tr>
@@ -47,8 +51,9 @@ function Detail(props) { //props.target을 받아올건데 props로 해주면 ta
                 <th>담당자 연락처</th> 
                 <td>{props.target.officetel}</td>
                 </tr>
-                
+             
             </table>
+           
         </div>
     </div>);
 }
