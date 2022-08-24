@@ -66,7 +66,7 @@ function App() {
 
     <h1 className="titleHead">유기동물 조회 서비스</h1>
      
-    <p className="catch"><i class="fas fa-paw"></i> 사지말고 입양하세요</p>
+    <p className="catch"><i className="fas fa-paw"></i> 사지말고 입양하세요</p>
     <SearchBar onSearch={handleSearch} />
     <div className="app">
       {selected ? <Detail target={selected} /> : <></> }
