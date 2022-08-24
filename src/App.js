@@ -15,8 +15,8 @@ function App() {
 
 
 
-  const key = "Lg3xW55zPXZOKKGy%2F9yuUYPbKZnBYzrDHtABcdAECRZiwNt0igZqOXoADrNI7%2BoSNrgN6raYgbrkNG2%2FUWerGA%3D%3D"
-
+  const key = process.env.REACT_APP_API_KEY;
+  
   useEffect(() => {
     fetch(`http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=32`)
       .then(response => response.json())
